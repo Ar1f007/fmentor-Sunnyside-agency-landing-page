@@ -1,0 +1,10 @@
+@use "../abstracts/variables" as *;
+
+.main-heading {
+  font-family: $font-fraunces;
+  font-size: clamp(3.2rem, 3.8vw, 8rem);
+  font-weight: 900;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
