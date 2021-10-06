@@ -99,6 +99,47 @@ select {
   letter-spacing: 0.8rem;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__brand {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  transition: all 0.2s;
+}
+.navbar__brand:focus {
+  outline: none;
+  background: #70cfff;
+}
+.navbar__nav {
+  display: flex;
+}
+.navbar__nav .nav__item:not(:last-child) {
+  margin-right: 4.8rem;
+}
+.navbar__nav .nav__item .nav__link {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  font-family: "Barlow", sans-serif;
+  color: white;
+  color: #fff;
+  transition: all 0.2s;
+}
+.navbar__nav .nav__item .nav__link.active {
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  background: white;
+  color: black;
+  text-transform: uppercase;
+}
+.navbar__nav .nav__item .nav__link:hover, .navbar__nav .nav__item .nav__link:focus {
+  background: #70cfff;
+  color: white;
+  outline: none;
+}
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -106,6 +147,7 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 2.5rem 3rem 0;
   position: relative;
 }
 .header__text {

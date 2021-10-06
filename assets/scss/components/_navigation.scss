@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as *;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__brand {
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      background: $light-blue;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    .nav__item {
+      &:not(:last-child) {
+        margin-right: 4.8rem;
+      }
+
+      .nav__link {
+        padding: 1rem 2.5rem;
+        border-radius: 2rem;
+        font-family: $font-barlow;
+        color: $white;
+        color: #fff;
+
+        transition: all 0.2s;
+
+        &.active {
+          padding: 1rem 2.5rem;
+          border-radius: 2rem;
+          background: $white;
+          color: $black;
+          text-transform: uppercase;
+        }
+
+        &:hover,
+        &:focus {
+          background: $light-blue;
+          color: $white;
+          outline: none;
+        }
+      }
+    }
+  }
+}
