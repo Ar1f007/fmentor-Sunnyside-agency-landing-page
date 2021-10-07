@@ -1,6 +1,8 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+@use "../base/animation" as *;
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -23,6 +25,7 @@
 
     .arrow-down {
       margin-top: 8.5vh;
+      animation: bounce 1s;
     }
   }
 }
