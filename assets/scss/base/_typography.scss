@@ -8,3 +8,10 @@
   text-transform: uppercase;
   letter-spacing: 0.8rem;
 }
+
+.secondary-heading {
+  width: 15ch;
+  font-family: $font-fraunces;
+  font-size: clamp(2.5rem, 2.5vw, 3.8rem);
+  font-weight: 600;
+}

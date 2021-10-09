@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+.section {
+  width: 100%;
+
+  display: flex;
+
+  &__left {
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &--1 &__left {
+    padding: 0 10rem 0 15rem;
+  }
+
+  &__right {
+    flex: 1;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__text {
+    width: 45ch;
+    margin: 3rem 0;
+    font-family: $font-barlow;
+    color: $dark-grayish-blue;
+    line-height: 1.8;
+  }
+}
