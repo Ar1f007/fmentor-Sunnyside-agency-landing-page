@@ -100,7 +100,7 @@ select {
 }
 
 .secondary-heading {
-  width: 15ch;
+  width: 16ch;
   font-family: "Fraunces", serif;
   font-size: clamp(2.5rem, 2.5vw, 3.8rem);
   font-weight: 600;
@@ -112,22 +112,28 @@ select {
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  z-index: 1;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
-.learn-more-btn--yellow::before {
+.learn-more-btn::before {
   content: "";
   width: 105%;
-  height: 5px;
-  border-bottom: 8px solid #ffeb7a;
   border-radius: 5px;
   position: absolute;
   left: -0.3rem;
   bottom: 0;
   z-index: -1;
+  border-bottom: 8px solid;
+}
+
+.learn-more-btn--yellow::before {
+  border-color: #fff3ad;
+}
+
+.learn-more-btn--soft-red::before {
+  border-color: #ffd2cc;
 }
 
 .navbar {
@@ -250,19 +256,22 @@ select {
   width: 100%;
   display: flex;
 }
-.section__left {
+.section__texts {
   flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.section--1 .section__left {
+.section--1 .section__texts {
   padding: 0 10rem 0 15rem;
 }
-.section__right {
+.section--2 .section__texts {
+  padding: 0 15rem 0 10rem;
+}
+.section__img {
   flex: 1;
 }
-.section__right img {
+.section__img img {
   width: 100%;
   display: block;
 }

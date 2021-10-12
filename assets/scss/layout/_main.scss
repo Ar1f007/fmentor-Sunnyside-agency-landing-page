@@ -5,7 +5,7 @@
 
   display: flex;
 
-  &__left {
+  &__texts {
     flex-basis: 50%;
 
     display: flex;
@@ -13,11 +13,15 @@
     justify-content: center;
   }
 
-  &--1 &__left {
+  &--1 &__texts {
     padding: 0 10rem 0 15rem;
   }
 
-  &__right {
+  &--2 &__texts {
+    padding: 0 15rem 0 10rem;
+  }
+
+  &__img {
     flex: 1;
 
     img {

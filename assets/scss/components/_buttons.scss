@@ -6,19 +6,25 @@
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
-  z-index: 1;
   width: max-content;
 }
 
-.learn-more-btn--yellow::before {
+.learn-more-btn::before {
   content: "";
   width: 105%;
-  height: 5px;
-  border-bottom: 8px solid lighten($color: $yellow, $amount: 25%);
   border-radius: 5px;
 
   position: absolute;
   left: -0.3rem;
   bottom: 0;
   z-index: -1;
+  border-bottom: 8px solid;
+}
+
+.learn-more-btn--yellow::before {
+  border-color: lighten($color: $yellow, $amount: 35%);
+}
+
+.learn-more-btn--soft-red::before {
+  border-color: lighten($color: $soft-red, $amount: 20%);
 }
