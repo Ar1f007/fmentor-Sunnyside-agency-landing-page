@@ -1,8 +1,12 @@
 @use "../abstracts/variables" as *;
 
-.main-heading {
+.main-heading,
+.secondary-heading {
   font-family: $font-fraunces;
-  font-size: clamp(3.2rem, 3.8vw, 8rem);
+}
+
+.main-heading {
+  font-size: clamp(3.2rem, 3.8vw, 5rem);
   font-weight: 900;
   color: $white;
   text-transform: uppercase;
@@ -11,7 +15,6 @@
 
 .secondary-heading {
   width: 16ch;
-  font-family: $font-fraunces;
   font-size: clamp(2.5rem, 2.5vw, 3.8rem);
   font-weight: 600;
 }

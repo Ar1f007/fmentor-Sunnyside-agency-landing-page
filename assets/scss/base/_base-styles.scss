@@ -10,5 +10,14 @@ html {
 }
 
 body {
+  width: 100%;
   font-size: 1.8rem;
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #f7f7f7;
+  }
 }
