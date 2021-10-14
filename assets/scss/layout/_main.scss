@@ -2,6 +2,7 @@
 @use "../abstracts/mixins" as *;
 .section {
   width: 100%;
+  position: relative;
 
   background-color: #fff;
   z-index: -2;
@@ -25,6 +26,7 @@
 
   &__img {
     flex: 1;
+    position: relative;
 
     img {
       width: 100%;
@@ -39,4 +41,38 @@
     color: $dark-grayish-blue;
     line-height: 1.8;
   }
+}
+
+.section--3 .secondary-heading {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+.section__img-left .secondary-heading {
+  color: $dark-desaturated-cyan;
+}
+.section__img-left p {
+  color: lighten($color: $dark-desaturated-cyan, $amount: 10%);
+}
+
+.section__img-right p {
+  color: lighten($color: $dark-blue, $amount: 10%);
+}
+
+.section__img-right .secondary-heading {
+  color: $dark-blue;
+}
+
+.section--3 p {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40ch;
+  text-align: center;
+  font-family: $font-barlow;
+  font-weight: 600;
 }
