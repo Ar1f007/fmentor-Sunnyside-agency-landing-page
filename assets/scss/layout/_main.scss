@@ -1,10 +1,11 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
+
 .section {
   width: 100%;
   position: relative;
+  background: $light-white;
 
-  background-color: #fff;
   z-index: 1;
   display: flex;
 
@@ -62,6 +63,13 @@
       display: block;
     }
 
+    &-left,
+    &-right {
+      .secondary-heading {
+        font-size: clamp(2.5rem, 1.6vw, 3.8rem);
+      }
+    }
+
     &-left {
       .secondary-heading {
         color: $dark-desaturated-cyan;
@@ -79,6 +87,35 @@
 
       p {
         color: lighten($color: $dark-blue, $amount: 10%);
+      }
+    }
+  }
+
+  &-4 {
+    width: 100%;
+    background: $light-white;
+    padding: 12rem 0;
+
+    h2 {
+      width: 100%;
+      font-family: $font-fraunces;
+      font-size: clamp(1.8rem, 2rem, 2.5rem);
+      text-align: center;
+      color: $grayish-blue;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .row {
+      width: 80%;
+      margin: 8rem auto 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .col {
+        flex-basis: 28%;
       }
     }
   }

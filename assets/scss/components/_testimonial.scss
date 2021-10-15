@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.col {
+  @include flex-items-center;
+  flex-direction: column;
+
+  .client-img {
+    width: 6rem;
+    height: 6rem;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .client-review {
+    margin: 3.5rem 0;
+    text-align: center;
+    font-family: $font-barlow;
+    font-size: 1.6rem;
+    color: $dark-grayish-blue;
+    color: $very-dark-grayish-blue;
+  }
+
+  .client-about {
+    text-align: center;
+    h3 {
+      font-family: $font-fraunces;
+      font-size: 1.8rem;
+      margin: 0.8rem 0;
+    }
+
+    p {
+      font-family: $font-barlow;
+      color: $dark-grayish-blue;
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
+    }
+  }
+}
