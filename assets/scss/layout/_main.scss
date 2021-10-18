@@ -119,4 +119,15 @@
       }
     }
   }
+
+  &-5 {
+    .gallery-wrapper {
+      width: 100%;
+      display: flex;
+    }
+
+    .gallery-wrapper > div {
+      width: 25%;
+    }
+  }
 }
