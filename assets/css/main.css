@@ -226,6 +226,28 @@ body {
   outline: none;
 }
 
+.footer .navbar__nav--footer {
+  margin: 4rem 0 8rem;
+}
+.footer .navbar__nav--footer .nav__link {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  color: #458c7e;
+}
+.footer .navbar__nav--footer .nav__link:hover, .footer .navbar__nav--footer .nav__link:focus {
+  background: none;
+  color: white;
+}
+.footer .navbar__nav .nav__item:not(:last-child) {
+  margin-right: 0;
+}
+.footer .navbar__nav .nav__link:hover, .footer .navbar__nav .nav__link:focus {
+  background: none;
+}
+.footer .navbar__nav .nav__link:hover svg path, .footer .navbar__nav .nav__link:focus svg path {
+  fill: white;
+  transition: all 0.3s;
+}
+
 @-webkit-keyframes bounce {
   from, 20%, 53%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -396,7 +418,23 @@ body {
 .section-5 .gallery-wrapper {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .section-5 .gallery-wrapper > div {
   width: 25%;
+}
+
+.footer {
+  background-color: #458c7e;
+  background-color: #9bd4c8;
+  padding: 8rem 0 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo svg path {
+  fill: #2e7565;
+}
+.footer .nav__link svg path {
+  fill: #317767;
 }/*# sourceMappingURL=main.css.map */
