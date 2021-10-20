@@ -50,3 +50,38 @@
     }
   }
 }
+
+.footer {
+  .navbar__nav--footer {
+    margin: 4rem 0 8rem;
+    .nav__link {
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      color: $dark-moderate-cyan;
+    }
+
+    .nav__link {
+      &:hover,
+      &:focus {
+        background: none;
+        color: $white;
+      }
+    }
+  }
+
+  .navbar__nav .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .navbar__nav .nav__link {
+    &:hover,
+    &:focus {
+      background: none;
+    }
+
+    &:hover svg path,
+    &:focus svg path {
+      fill: $white;
+      transition: all 0.3s;
+    }
+  }
+}

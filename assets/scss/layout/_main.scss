@@ -124,6 +124,7 @@
     .gallery-wrapper {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
     }
 
     .gallery-wrapper > div {
