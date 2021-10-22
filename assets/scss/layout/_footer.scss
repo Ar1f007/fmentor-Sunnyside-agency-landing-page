@@ -17,4 +17,10 @@
   .nav__link svg path {
     fill: #317767;
   }
+  position: relative;
+
+  .attribution {
+    position: absolute;
+    bottom: 0.5rem;
+  }
 }
