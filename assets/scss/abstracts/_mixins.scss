@@ -1,7 +1,38 @@
-@use "./variables" as *;
+@use './variables' as *;
 
 @mixin flex-items-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// Media Query
+@mixin respond($breakpoint) {
+  // up to 375px
+  @if $breakpoint == very-small {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
+
+  // up to 480px
+  @if $breakpoint == small {
+    @media screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  // up to 769px
+  @if $breakpoint == medium {
+    @media screen and (max-width: 769px) {
+      @content;
+    }
+  }
+
+  // up to 1366px
+  @if $breakpoint == large {
+    @media screen and (max-width: 1366px) {
+      @content;
+    }
+  }
 }

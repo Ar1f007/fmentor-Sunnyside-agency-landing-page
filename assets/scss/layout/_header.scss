@@ -1,12 +1,12 @@
-@use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-@use "../base/animation" as *;
+@use '../base/animation' as *;
 
 .header {
   width: 100%;
   min-height: 100vh;
-  background: url("../images/desktop/image-header.jpg");
+  background: url('../images/desktop/image-header.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
