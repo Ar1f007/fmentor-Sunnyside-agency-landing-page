@@ -29,8 +29,15 @@
     }
   }
 
-  // up to 1366px
+  // up to 1200px
   @if $breakpoint == large {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  // up to 1366px
+  @if $breakpoint == larger {
     @media screen and (max-width: 1366px) {
       @content;
     }

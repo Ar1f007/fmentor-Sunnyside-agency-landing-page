@@ -20,12 +20,21 @@
     left: 50%;
     transform: translateX(-50%);
 
+    @include respond(large) {
+      top: 25vh;
+      text-align: center;
+    }
+
     @include flex-items-center;
     flex-direction: column;
 
     .arrow-down {
       margin-top: 8.5vh;
       animation: bounce 1s;
+
+      @include respond(large) {
+        margin-top: 5vh;
+      }
     }
   }
 }
