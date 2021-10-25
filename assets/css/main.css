@@ -358,8 +358,19 @@ body {
 .section--1 .section__texts {
   padding: 0 10rem 0 15rem;
 }
+@media screen and (max-width: 1024px) {
+  .section--1 .section__texts {
+    padding-left: 5rem;
+  }
+}
 .section--2 .section__texts {
   padding: 0 15rem 0 10rem;
+}
+@media screen and (max-width: 1024px) {
+  .section--2 .section__texts {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }
 .section--3 .secondary-heading {
   position: absolute;

@@ -27,10 +27,19 @@
 
   &--1 &__texts {
     padding: 0 10rem 0 15rem;
+
+    @include respond(medium) {
+      padding-left: 5rem;
+    }
   }
 
   &--2 &__texts {
     padding: 0 15rem 0 10rem;
+
+    @include respond(medium) {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
   }
 
   &--3 {
