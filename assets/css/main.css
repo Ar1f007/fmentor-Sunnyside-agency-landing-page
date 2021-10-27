@@ -86,6 +86,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+}
 
 body {
   width: 100%;
@@ -355,12 +360,22 @@ body {
   color: #818498;
   line-height: 1.8;
 }
+@media screen and (max-width: 768px) {
+  .section__text {
+    font-size: 1.6rem;
+  }
+}
 .section--1 .section__texts {
   padding: 0 10rem 0 15rem;
 }
 @media screen and (max-width: 1024px) {
   .section--1 .section__texts {
     padding-left: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section--1 .section__texts {
+    padding-left: 3rem;
   }
 }
 .section--2 .section__texts {
@@ -370,6 +385,12 @@ body {
   .section--2 .section__texts {
     padding-right: 5rem;
     padding-left: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section--2 .section__texts {
+    padding-left: 3rem;
+    padding-right: 0;
   }
 }
 .section--3 .secondary-heading {
